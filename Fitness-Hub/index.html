@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <title>Fitness Hub</title>
+  </head>
+  <body class="main-page bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">FITNESS HUB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 text-decoration-none text-light"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="trainers.html"
+                >Trainers</a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid bg-light text-center mt-5 p-0 fs-4">
+      ABOUT US
+      <div class="container-fluid bg-dark bg-gradient text-light fs-5">
+        At Fitness Hub, we offer a diverse range of programs, personalized
+        workouts, and expert guidance to help you achieve your fitness goals.
+        Join us today, and together, we'll embark on an inspiring and
+        transformation fitness adventure.
+      </div>
+    </div>
+
+    <div
+      id="trainers"
+      class="bg-light text-center mt-5 mx-5 fs-4"
+    >
+      <h2>TRAINERS</h2>
+    </div>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide pb-4 px-0 w-100 mx-auto"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators m-0">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active border-dark ">
+          <img src="images/female1.jpg" class="d-block w-75 mx-auto " alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Karen</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/male1.jpg" class="d-block w-75 mx-auto" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Bob</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/female2.jpg" class="d-block w-75 mx-auto" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Sandy</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/male2.jpg" class="d-block w-75 mx-auto" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Joe</h2>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <form class="mx-3">
+      <div class="mb-3 mx-5 ">
+        <input
+          type="full-name"
+          class="form-control"
+          placeholder="Full Name"
+          id="FullName"
+        />
+      </div>
+      <div class="mb-3 mx-5">
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email"
+          id="Email"
+        />
+      </div>
+      <div id="book-now" class="d-grid mx-5 pb-3">
+        <button type="button" class="btn btn-primary btn-lg">BOOK NOW</button>
+      </div>
+    </form>
+  </body>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</html>
