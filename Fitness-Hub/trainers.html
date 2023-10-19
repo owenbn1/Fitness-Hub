@@ -10,6 +10,7 @@
     <title>Fitness Hub</title>
   </head>
   <body>
+    <!--This is just the nav component thats similar to the first page-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">FITNESS HUB</a>
@@ -52,19 +53,27 @@
         </div>
       </div>
     </nav>
+    <!--header for the trainers session section-->
     <div class="trainer-log text-center">
       <h2>Trainer Session</h2>
+      <!--made the table dark and have borders around each cell and 
+        made it have an effect for when its being hovered-->
       <table
         class="table table-bordered table-dark table-striped border-dark table-hover"
       >
+      <!--made a table for different trainers and there specialties in fitness 
+        and availabilities-->
         <thead>
           <tr class="trainer-head-log border-bottom">
+            <!--made row for the head of each column-->
             <th scope="col">TRAINER</th>
             <th scope="col">STYLE</th>
             <th scope="col">DAYS</th>
           </tr>
         </thead>
         <tbody>
+            <!--put the trainers name/ style of fitness and days that they 
+                are availabilities-->
           <tr>
             <td>Bob</td>
             <td>Weight Lifting</td>
@@ -88,12 +97,20 @@
         </tbody>
       </table>
     </div>
+    <!--made a card component to all of different types of workout-->
     <div class="d-flex">
-      <div class="container text-center mb-5">
-        <div class="row mx-auto ">
+        <!--made the card be d-flex so it can we able to adapt to the width of device
+             screen-->
+      <div class="container text-center ">
+        <!--this just centers all the text-->
+        <div class="row">
+            <!--this will allow it to be in a row while its in desktop mode-->
           <div class="col-md p-3">
+            <!--it allows the cards to be a certain size while they are in a 
+                row or col state-->
             <div id="card-1" class="card bg-dark text-light">
               <img src="images/weight-lifting.jpg" alt="" width="100%" />
+              <!--added image in the card and made it fit to 100% in the container-->
               <div class="card-body">
                 <h3 class="card-title">Weight Lifting</h3>
               </div>
